@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "raleway", sans-serif;
+}
+
+html {
+  font-size: 15px;
+}
+
+header {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../image/dd.jpg);
+  background-size: cover;
+  text-align: center;
+  border-top: 10px solid #4444d6;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .logo {
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+  text-decoration: none;
+  font-weight: 200;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 200;
+  padding-right: 1.2rem;
+  font-size: 0.7rem;
+}
+
+header .heading {
+  margin-top: 4rem;
+}
+
+header .heading h1 {
+  color: white;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+header .heading h6 {
+  color: white;
+  font-weight: 100;
+  font-size: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5% 5%;
+}
+
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.more {
+  width: 70px;
+  height: 24px;
+  border: 0;
+  background-color: #4444d6;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.info hr {
+  width: 0.5px;
+  border: none;
+  height: auto;
+  background-color: #b6b6ad;
+}
+
+.info section {
+  width: 33%;
+  padding: 15px;
+}
+
+.info section h2 {
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 2rem;
+  color: #4444d6;
+}
+
+.info section p {
+  font-weight: 300;
+  font-size: 0.7rem;
+  margin-bottom: 1.2rem;
+  line-height: 2rem;
+  color: grey;
+}
+
+.info section hr {
+  width: 0.5px;
+  height: auto;
+  border: none;
+  background-color: white;
+}
+
+.testimonal-wrapper {
+  width: 100%;
+  background-color: #4444d6;
+  text-align: center;
+  color: white;
+}
+
+.testimonal-wrapper h2 {
+  font-size: 2.2rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+.testimonal-wrapper p {
+  font-size: 0.6rem;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+
+.testimonal-wrapper .testimonal {
+  width: 22%;
+  border: 1px solid grey;
+  padding: 1rem 0;
+}
+
+.testimonal-wrapper .testimonal img {
+  border-radius: 100%;
+  width: 60%;
+}
+
+.testimonal-wrapper .testimonal h3 {
+  font-size: 1.3rem;
+  font-weight: 200;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.testimonal-wrapper .testimonal h5 {
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+.image-gallery h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 100;
+  color: #4444d6;
+}
+
+.image-gallery h6 {
+  text-align: center;
+  font-weight: 100;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  color: grey;
+}
+
+.image-gallery .left, .image-gallery .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.image-gallery .left img, .image-gallery .right img {
+  width: 100%;
+}
+
+.image-gallery .left h3, .image-gallery .right h3 {
+  margin: 2rem 0;
+  font-weight: 200;
+  text-align: left;
+  color: #4444d6;
+}
+
+.image-gallery .left p, .image-gallery .right p {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  text-align: left;
+  color: grey;
+  font-size: 0.7rem;
+}
+
+footer {
+  width: 100%;
+  height: 10px;
+}
+
+footer .foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  border-top: 1px solid #cac3c3;
+}
+
+footer .foot .copyright p {
+  color: grey;
+  font-size: 0.6rem;
+  padding-top: 1rem;
+}
+
+footer .foot .socialmedia span {
+  font-size: 1rem;
+  padding: 1rem 0.5rem 0rem 0rem;
+  color: #4444d6;
+}
+/*# sourceMappingURL=theory.css.map */

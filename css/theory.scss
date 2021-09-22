@@ -1,0 +1,226 @@
+$primary-font:'raleway',sans-serif;
+$primary-color:rgb(68, 68, 214);
+$white-col:white;
+$black-col:black;
+
+@mixin flex_property{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:$primary-font;
+}
+html{
+    font-size:15px;
+}
+header{
+    width:100%;
+    height:70vh;
+    background-image:url(../image/dd.jpg);
+    background-size:cover;
+    text-align:center;
+    border-top:10px solid $primary-color;
+
+    nav{
+        @include flex_property();
+
+        .logo{
+            font-weight:400;
+            font-size:0.7rem;
+        }
+        ul{
+            display:flex;
+
+            li{
+                list-style:none;
+                text-decoration:none;
+                font-weight:200;
+               
+            }
+        }
+        a{
+            color:$white-col;
+            text-decoration:none;
+            font-weight:200;
+            padding-right:1.2rem;
+            font-size:0.7rem;
+        }
+    }
+    .heading{
+        margin-top:4rem;
+        h1{
+            color:$white-col;
+            font-weight:100;
+            font-size:2rem;
+        }
+        h6{
+            color:$white-col;
+            font-weight:100;
+            font-size:0.5rem;
+            margin-top:0.8rem;
+        }
+    }
+}
+.inner{
+    max-width:1200px;
+    margin:0 auto;
+    padding:5% 5%;
+}
+.flex-box{
+    @include flex_property();
+}
+.more{
+    width:70px;
+    height:24px;
+    border:0;
+    background-color:$primary-color;
+    color:$white-col;
+    font-size:1rem;
+    font-weight:400;
+}
+.info{
+    hr{
+        width:0.5px;
+        border:none;
+        height:auto;
+        background-color:rgb(182, 182, 173);
+    }
+
+   section{
+       width:33%;
+       padding:15px;
+      
+      
+
+   h2{
+       font-weight:300;
+       font-size:0.9rem;
+       margin-bottom:1.5rem;
+       line-height:2rem;
+       color:$primary-color;
+   }
+   p{
+       font-weight:300;
+       font-size:0.7rem;
+       margin-bottom:1.2rem;
+       line-height:2rem;
+       color:grey;
+   
+    }
+    hr{
+        width:0.5px;
+        height:auto;
+        border:none;
+        background-color:white;
+    }
+ }
+
+}
+.testimonal-wrapper{
+    width:100%;
+    background-color:$primary-color;
+    text-align:center;
+    color:$white-col;
+    
+
+
+    h2{
+        font-size:2.2rem;
+        font-weight:200;
+        margin-bottom:1rem;
+    }
+    p{
+        font-size:0.6rem;
+        font-weight:lighter;
+        margin-bottom:2rem;
+    }
+    .testimonal{
+        width:22%;
+        border:1px solid grey;
+        padding:1rem 0;
+
+        img{
+            border-radius:100%;
+           width:60%;
+        }
+        h3{
+            font-size:1.3rem;
+            font-weight:200;
+            margin-top:2rem;
+            margin-bottom:1rem;
+        }
+        h5{
+            font-size:0.7rem;
+            font-weight:lighter;
+        }
+    }
+}
+.image-gallery{
+    h1{
+        text-align:center;
+        font-size:2rem;
+        font-weight:100;
+        color:$primary-color;
+    }
+    h6{
+        text-align:center;
+        font-weight:100;
+        font-size:0.8rem;
+        margin-top:1rem;
+        margin-bottom:3rem;
+        color:grey;
+        
+
+    }
+    .left ,.right{
+        @include flex_property();
+        width:40%;
+        margin:0 auto;
+    
+    img{
+        width:100%;
+    }
+    h3{
+        margin:2rem 0;
+        font-weight:200;
+        text-align:left;
+        color:$primary-color;
+
+    }
+    p{
+        margin-bottom:2rem;
+        line-height:1.5rem;
+        text-align:left;
+        color:grey;
+        font-size:0.7rem;
+    }
+  }
+}
+
+footer{
+
+    width:100%;
+    height:10px;
+    .foot{
+        @include flex_property();
+        margin:0 auto;
+        border-top:1px solid rgb(202, 195, 195);
+   
+        .copyright p{
+        color:grey;
+        font-size:0.6rem;
+         padding-top:1rem;
+    }
+    
+    .socialmedia span{
+        font-size:1rem;
+        padding:1rem 0.5rem 0rem 0rem ;
+        color:$primary-color;
+    }
+  }
+
+ }
